@@ -19,6 +19,22 @@ mediante promedio ponderado y corrige la trayectoria con un controlador PID.
 
 El proyecto no necesita librerías externas.
 
+## Compilación
+
+El sketch está dentro de una carpeta con el mismo nombre que su archivo
+principal, como requiere Arduino:
+
+```text
+seguidor_nano/
+└── seguidor_nano.ino
+```
+
+Desde la raíz del repositorio se compila para Arduino Nano con:
+
+```powershell
+arduino-cli compile --fqbn arduino:avr:nano seguidor_nano
+```
+
 ## Hardware
 
 - 1 Arduino Nano.
@@ -89,7 +105,7 @@ Para calibrar moviendo el robot manualmente, cambia AUTO_SWIPE a false.
 ## Parámetros principales
 
 Todos se encuentran al inicio de
-[seguidor_nano.ino](seguidor_nano.ino).
+[seguidor_nano.ino](seguidor_nano/seguidor_nano.ino).
 
 | Parámetro | Valor inicial | Función |
 |---|---:|---|
